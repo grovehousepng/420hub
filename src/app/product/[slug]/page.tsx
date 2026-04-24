@@ -24,7 +24,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         name: rawProduct.name,
         variant: rawProduct.attributes?.[0]?.options?.[0] || null,
         price: parseFloat(rawProduct.price) || 0,
+        regularPrice: parseFloat(rawProduct.regular_price) || null,
         priceFormatted: rawProduct.price ? `₺${rawProduct.price}` : null,
+        regularPriceFormatted: rawProduct.regular_price ? `₺${rawProduct.regular_price}` : null,
         badge: null,
         rating: 5,
         reviews: 0,
@@ -98,6 +100,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                         {/* Price */}
                         <div className="flex items-baseline gap-3">
                             {product.priceFormatted && <span className="text-4xl font-headline font-bold tracking-tight">{product.priceFormatted}</span>}
+                            {product.regularPriceFormatted && product.regularPrice !== null && product.regularPrice > product.price && (
+                                <span className="text-xl text-brand-muted line-through decoration-brand-muted/40 font-headline">{product.regularPriceFormatted}</span>
+                            )}
                         </div>
 
                         {/* Variant selector */}
@@ -131,6 +136,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                                     id: product.id,
                                     name: product.name,
                                     price: product.price,
+                                    regular_price: product.regularPrice || undefined,
                                     quantity: 1,
                                     imageUrl: product.images[0],
                                     variant: product.variant || undefined,
@@ -144,6 +150,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                                     id: product.id,
                                     name: product.name,
                                     price: product.price,
+                                    regular_price: product.regularPrice || undefined,
                                     quantity: 1,
                                     imageUrl: product.images[0],
                                     variant: product.variant || undefined,

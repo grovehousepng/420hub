@@ -13,7 +13,10 @@ export default async function Home() {
         slug: p.slug,
         name: p.name,
         variant: p.attributes?.[0]?.options?.[0] || null,
-        price: p.price ? `₺${p.price}` : null,
+        price: p.price ? String(p.price) : '0',
+        regularPrice: p.regular_price ? Number(p.regular_price) : null,
+        priceFormatted: p.price ? `₺${p.price}` : null,
+        regularPriceFormatted: p.regular_price ? `₺${p.regular_price}` : null,
         badge: index === 0 ? 'Yeni' : null,
         img: p.images?.[0]?.src || '/grinder-hero.png',
         wide: index === 0,
@@ -30,7 +33,10 @@ export default async function Home() {
             slug: p.slug,
             name: p.name,
             variant: p.attributes?.[0]?.options?.[0] || null,
-            price: p.price ? `₺${p.price}` : null,
+            price: p.price ? String(p.price) : '0',
+            regularPrice: p.regular_price ? Number(p.regular_price) : null,
+            priceFormatted: p.price ? `₺${p.price}` : null,
+            regularPriceFormatted: p.regular_price ? `₺${p.regular_price}` : null,
             badge: null,
             img: p.images?.[0]?.src || '/grinder-hero.png',
             wide: index === 0,
@@ -42,7 +48,7 @@ export default async function Home() {
     const rawCategories = await getWCCategories();
     // 'cok-satanlar', 'genel', 'uncategorized' gibi kategorileri ana ekranda gizlemek iyi bir pratik olabilir, ancak hepsi gozuksun isteniyor, cok-satanlar ve genel'i haric tutalim
     const displayCategories = rawCategories.filter(c => !['cok-satanlar', 'genel', 'uncategorized'].includes(c.slug));
-    
+
 
 
     return (
@@ -152,7 +158,7 @@ export default async function Home() {
                                     items: [{
                                         item_id: p.id,
                                         item_name: p.name,
-                                        price: p.price ? parseFloat(p.price.replace('₺','')) : 0,
+                                        price: Number(p.price),
                                         index: i
                                     }]
                                 }
@@ -172,7 +178,12 @@ export default async function Home() {
                                         {p.variant && <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-muted mb-1">{p.variant}</p>}
                                         <h3 className="font-headline font-bold text-xl tracking-tight text-brand-black">{p.name}</h3>
                                     </div>
-                                    {p.price && <span className="font-headline font-bold text-lg text-brand-black shrink-0">{p.price}</span>}
+                                    <div className="flex flex-col items-end shrink-0">
+                                        <span className="font-headline font-bold text-lg text-brand-black">{p.priceFormatted}</span>
+                                        {p.regularPriceFormatted && Number(p.regularPrice) > Number(p.price) && (
+                                            <span className="text-[12px] text-brand-muted line-through opacity-60">{p.regularPriceFormatted}</span>
+                                        )}
+                                    </div>
                                 </div>
                                 {p.badge && (
                                     <span className="mt-3 inline-block px-2.5 py-1 bg-brand-green/10 text-brand-green text-[10px] font-bold tracking-[0.15em] uppercase rounded-sm">
@@ -188,7 +199,8 @@ export default async function Home() {
                                         product={{
                                             id: String(p.id),
                                             name: p.name,
-                                            price: p.price ? parseFloat(p.price.replace('₺','')) : 0,
+                                            price: Number(p.price),
+                                            regular_price: p.regularPrice || undefined,
                                             imageUrl: p.img,
                                             variant: p.variant || undefined,
                                             quantity: 1,
@@ -240,7 +252,7 @@ export default async function Home() {
                                         items: [{
                                             item_id: p.id,
                                             item_name: p.name,
-                                            price: p.price ? parseFloat(p.price.replace('₺','')) : 0,
+                                            price: Number(p.price),
                                             index: i
                                         }]
                                     }
@@ -260,7 +272,12 @@ export default async function Home() {
                                             {p.variant && <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-muted mb-1">{p.variant}</p>}
                                             <h3 className="font-headline font-bold text-xl tracking-tight text-brand-black">{p.name}</h3>
                                         </div>
-                                        {p.price && <span className="font-headline font-bold text-lg text-brand-black shrink-0">{p.price}</span>}
+                                        <div className="flex flex-col items-end shrink-0">
+                                            <span className="font-headline font-bold text-lg text-brand-black">{p.priceFormatted}</span>
+                                            {p.regularPriceFormatted && Number(p.regularPrice) > Number(p.price) && (
+                                                <span className="text-[12px] text-brand-muted line-through opacity-60">{p.regularPriceFormatted}</span>
+                                            )}
+                                        </div>
                                     </div>
                                     <div className="mt-4 flex items-center justify-between">
                                         <div className="flex items-center gap-2 text-[10px] font-headline font-bold uppercase tracking-[0.2em] text-brand-black opacity-80 group-hover:opacity-100 transition-opacity">
@@ -271,7 +288,8 @@ export default async function Home() {
                                             product={{
                                                 id: String(p.id),
                                                 name: p.name,
-                                                price: p.price ? parseFloat(p.price.replace('₺','')) : 0,
+                                                price: Number(p.price),
+                                                regular_price: p.regularPrice || undefined,
                                                 imageUrl: p.img,
                                                 variant: p.variant || undefined,
                                                 quantity: 1,

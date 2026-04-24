@@ -57,8 +57,8 @@ export default function ProductCard({ product, index }: ProductCardProps) {
                         {p.price ? (
                             <div className="flex items-baseline gap-2">
                                 <span className="font-headline font-bold text-lg md:text-xl text-brand-black">₺{p.price}</span>
-                                {p.regular_price && p.regular_price !== p.price && (
-                                    <span className="text-[12px] text-brand-muted line-through">₺{p.regular_price}</span>
+                                {p.regular_price && Number(p.regular_price) > Number(p.price) && (
+                                    <span className="text-[12px] text-brand-muted line-through opacity-60">₺{p.regular_price}</span>
                                 )}
                             </div>
                         ) : (

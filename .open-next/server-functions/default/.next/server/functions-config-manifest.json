@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "functions": {
+    "/": {},
+    "/[slug]": {},
+    "/api/reviews/[productId]": {},
+    "/checkout": {},
+    "/product/[slug]": {},
+    "/shop": {},
+    "/thank-you": {}
+  }
+}

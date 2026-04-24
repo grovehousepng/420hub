@@ -5,6 +5,7 @@ export interface CartItem {
     id: string;
     name: string;
     price: number;
+    regular_price?: number;
     quantity: number;
     imageUrl: string;
     variant?: string;
@@ -26,7 +27,11 @@ export const useCartStore = create<CartStore>()(
             items: [],
             addToCart: (item) => set((state) => {
                 const existingItem = state.items.find(i => i.id === item.id && i.variant === item.variant);
-                const safeItem = { ...item, price: Number(item.price) };
+                const safeItem = { 
+                    ...item, 
+                    price: Number(item.price),
+                    regular_price: item.regular_price ? Number(item.regular_price) : undefined
+                };
                 if (existingItem) {
                     return {
                         items: state.items.map(i => 
@@ -61,6 +66,7 @@ export const useCartStore = create<CartStore>()(
                     items: (persistedState?.items || []).map((item: any) => ({
                         ...item,
                         price: Number(item.price) || 0,
+                        regular_price: item.regular_price ? Number(item.regular_price) : undefined,
                         quantity: Number(item.quantity) || 1,
                     })),
                 };

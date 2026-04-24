@@ -5,6 +5,7 @@ import { getProductReviews, submitProductReview } from '@/lib/woocommerce';
 import ReviewForm from './ReviewForm';
 import ReviewLightbox from './ReviewLightbox';
 import ProductRating from './ProductRating';
+import ReviewSuccessPopup from './ReviewSuccessPopup';
 
 interface Photo {
     url: string;
@@ -31,6 +32,7 @@ export default function ProductReviews({ productId, productName }: Props) {
     const [avgRating, setAvgRating] = useState(0);
     const [loading, setLoading] = useState(true);
     const [showForm, setShowForm] = useState(false);
+    const [showSuccess, setShowSuccess] = useState(false);
     const [visibleCount, setVisibleCount] = useState(3);
 
     // Lightbox State
@@ -110,6 +112,7 @@ export default function ProductReviews({ productId, productName }: Props) {
                             productName={productName}
                             onSuccess={() => {
                                 setShowForm(false);
+                                setShowSuccess(true);
                                 fetchReviews();
                             }} 
                         />
@@ -190,6 +193,11 @@ export default function ProductReviews({ productId, productName }: Props) {
                     photos={lightbox.photos}
                     initialIndex={lightbox.index}
                     onClose={() => setLightbox({ ...lightbox, isOpen: false })}
+                />
+
+                <ReviewSuccessPopup 
+                    isOpen={showSuccess} 
+                    onClose={() => setShowSuccess(false)} 
                 />
             </div>
         </section>

@@ -1,0 +1,16 @@
+{
+  "/[slug]/page": "/[slug]",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/order-status/route": "/api/order-status",
+  "/api/paytr-link/route": "/api/paytr-link",
+  "/api/reviews/[productId]/route": "/api/reviews/[productId]",
+  "/api/reviews/debug/route": "/api/reviews/debug",
+  "/api/reviews/submit/route": "/api/reviews/submit",
+  "/api/search/route": "/api/search",
+  "/checkout/page": "/checkout",
+  "/page": "/",
+  "/product/[slug]/page": "/product/[slug]",
+  "/shop/page": "/shop",
+  "/thank-you/page": "/thank-you"
+}

@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { useState, useEffect, useRef } from 'react';
 import { useCartStore } from '@/store/useCartStore';
 import { pushEvent, getGAClientId } from '@/lib/gtm';

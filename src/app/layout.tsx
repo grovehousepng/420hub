@@ -43,7 +43,7 @@ export default async function RootLayout({
     });
   return (
     <html
-      lang="en"
+      lang="tr"
       className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <head>

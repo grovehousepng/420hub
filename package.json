@@ -2,32 +2,34 @@
   "name": "420hub-web",
   "version": "0.1.0",
   "private": true,
-    "scripts": {
-        "dev": "next dev --webpack",
-        "build": "next build && opennextjs-cloudflare build",
-        "start": "next start",
-        "lint": "eslint",
-        "deploy": "opennextjs-cloudflare deploy",
-        "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
-    },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:worker": "opennextjs-cloudflare build",
+    "prebuild:worker": "taskkill /F /IM node.exe /T 2>nul || set errorlevel=0",
+    "start": "next start",
+    "lint": "eslint",
+    "deploy": "npm run build:worker && opennextjs-cloudflare deploy",
+    "preview": "npm run build:worker && opennextjs-cloudflare preview"
+  },
   "dependencies": {
     "next": "16.2.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "zustand": "^5.0.12"
   },
-    "devDependencies": {
-        "@opennextjs/aws": "^3.10.2",
-        "@opennextjs/cloudflare": "^1.19.3",
-        "@tailwindcss/postcss": "^4",
-        "@tailwindcss/typography": "^0.5.19",
-        "@types/node": "^20",
-        "@types/react": "^19",
-        "@types/react-dom": "^19",
-        "eslint": "^9",
-        "eslint-config-next": "16.2.3",
-        "tailwindcss": "^4",
-        "typescript": "^5",
-        "wrangler": "^4.65.0"
-    }
+  "devDependencies": {
+    "@opennextjs/aws": "^3.10.2",
+    "@opennextjs/cloudflare": "^1.19.3",
+    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.3",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "wrangler": "^4.65.0"
+  }
 }

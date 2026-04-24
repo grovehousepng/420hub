@@ -1,0 +1,16 @@
+{
+  "/[slug]/page": "app-edge-has-no-entrypoint",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app-edge-has-no-entrypoint",
+  "/api/order-status/route": "app-edge-has-no-entrypoint",
+  "/api/paytr-link/route": "app-edge-has-no-entrypoint",
+  "/api/reviews/[productId]/route": "app-edge-has-no-entrypoint",
+  "/api/reviews/debug/route": "app-edge-has-no-entrypoint",
+  "/api/reviews/submit/route": "app-edge-has-no-entrypoint",
+  "/api/search/route": "app-edge-has-no-entrypoint",
+  "/checkout/page": "app-edge-has-no-entrypoint",
+  "/page": "app-edge-has-no-entrypoint",
+  "/product/[slug]/page": "app-edge-has-no-entrypoint",
+  "/shop/page": "app-edge-has-no-entrypoint",
+  "/thank-you/page": "app-edge-has-no-entrypoint"
+}

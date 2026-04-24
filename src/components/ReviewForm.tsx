@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { submitProductReview } from '@/lib/woocommerce';
-import ReviewSuccessPopup from './ReviewSuccessPopup';
 
 interface Props {
     productId: number;
@@ -19,14 +18,28 @@ export default function ReviewForm({ productId, productName, onSuccess }: Props)
     const [previews, setPreviews] = useState<string[]>([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
-    const [showSuccess, setShowSuccess] = useState(false);
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-// ... (omitted for brevity, keeping existing handleFileChange and removeFile)
+        const selectedFiles = Array.from(e.target.files || []);
+        
+        // Max 5 fotoğraf sınırı
+        if (files.length + selectedFiles.length > 5) {
+            setError('En fazla 5 fotoğraf ekleyebilirsiniz.');
+            return;
+        }
+
+        const newFiles = [...files, ...selectedFiles];
+        setFiles(newFiles);
+
+        // Önizleme oluştur
+        const newPreviews = selectedFiles.map(file => URL.createObjectURL(file));
+        setPreviews(prev => [...prev, ...newPreviews]);
     };
 
     const removeFile = (index: number) => {
         setFiles(prev => prev.filter((_, i) => i !== index));
+        // Mevcut objeyi temizle
+        URL.revokeObjectURL(previews[index]);
         setPreviews(prev => prev.filter((_, i) => i !== index));
     };
 
@@ -58,7 +71,6 @@ export default function ReviewForm({ productId, productName, onSuccess }: Props)
                 has_photo: files.length > 0
             });
 
-            setShowSuccess(true);
             onSuccess();
         } else {
             setError(result.message || 'Yorum gönderilirken bir hata oluştu.');
@@ -178,11 +190,6 @@ export default function ReviewForm({ productId, productName, onSuccess }: Props)
                     {loading ? 'Gönderiliyor...' : 'Yorumu Yayınla'}
                 </button>
             </form>
-
-            <ReviewSuccessPopup 
-                isOpen={showSuccess} 
-                onClose={() => setShowSuccess(false)} 
-            />
         </>
     );
 }

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-export const runtime = 'edge';
+// // export const runtime = 'edge';
 import { getProducts } from '@/lib/woocommerce';
 
 // We reuse getProducts but with a search term param, 
@@ -37,6 +37,7 @@ export async function GET(request: Request) {
             name: p.name,
             slug: p.slug,
             price: p.price,
+            regular_price: p.regular_price,
             image: p.images?.[0]?.src || '/grinder-black.png'
         }));
 

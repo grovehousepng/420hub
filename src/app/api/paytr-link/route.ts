@@ -1,6 +1,6 @@
 import { generatePayTRLink } from '@/lib/paytr';
 
-export const runtime = 'edge';
+// export const runtime = 'edge';
 
 /**
  * POST /api/paytr-link

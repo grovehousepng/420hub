@@ -126,8 +126,15 @@ export default function CartSidebar({ isOpen, onClose }: Props) {
                                             {item.variant && (
                                                 <p className="text-sm text-brand-muted font-body mb-2">Varyant: {item.variant}</p>
                                             )}
-                                            <div className="font-bold text-brand-black text-[15px]">
-                                                {Number(item.price).toLocaleString('tr-TR')} ₺
+                                            <div className="flex items-baseline gap-2">
+                                                <div className="font-bold text-brand-black text-[15px]">
+                                                    {Number(item.price).toLocaleString('tr-TR')} ₺
+                                                </div>
+                                                {item.regular_price && Number(item.regular_price) > Number(item.price) && (
+                                                    <div className="text-[12px] text-brand-muted line-through opacity-60">
+                                                        {Number(item.regular_price).toLocaleString('tr-TR')} ₺
+                                                    </div>
+                                                )}
                                             </div>
                                         </div>
 

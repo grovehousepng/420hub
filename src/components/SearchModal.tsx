@@ -9,6 +9,7 @@ interface ProductResult {
     name: string;
     slug: string;
     price: string;
+    regular_price?: string;
     image: string;
 }
 
@@ -129,7 +130,12 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                                         </div>
                                         <div>
                                             <h3 className="font-headline font-bold text-brand-black text-[18px]">{product.name}</h3>
-                                            <p className="font-body text-brand-muted font-medium text-[14px]">₺{product.price}</p>
+                                            <div className="flex items-baseline gap-2">
+                                                <p className="font-body text-brand-muted font-medium text-[14px]">₺{product.price}</p>
+                                                {product.regular_price && Number(product.regular_price) > Number(product.price) && (
+                                                    <p className="font-body text-brand-muted/40 line-through text-[12px]">₺{product.regular_price}</p>
+                                                )}
+                                            </div>
                                         </div>
                                         <div className="ml-auto">
                                             <span className="material-symbols-outlined text-brand-green">arrow_forward</span>

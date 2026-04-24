@@ -1,0 +1,550 @@
+{
+  "version": 3,
+  "middleware": {},
+  "sortedMiddleware": [],
+  "functions": {
+    "/[slug]/page": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/next-font-manifest.js",
+        "server/server-reference-manifest.js",
+        "server/edge/chunks/ssr/node_modules_0ckff.s._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_10msz3l._.js",
+        "server/edge/chunks/ssr/node_modules_0d8g-oq._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0i1wx97._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_12114qv._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_08a_v48._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0ai3pym._.js",
+        "server/edge/chunks/ssr/src_components_12x.wsu._.js",
+        "server/edge/chunks/ssr/_0a_cp4~._.js",
+        "server/app/[slug]/page_client-reference-manifest.js",
+        "server/edge/chunks/ssr/_next-internal_server_app_[slug]_page_actions_0t5oqir.js",
+        "server/edge/chunks/ssr/node_modules_0pspog7._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_0g5cdu_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_059js~_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_build_templates_edge-ssr-app_0xb-.xj.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_02.j-69._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0m.r279._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0jx2d1v._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_compiled_07ej-v4._.js",
+        "server/edge/chunks/ssr/node_modules_0gbahfn._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0a5tena._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0pblmlu._.js",
+        "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0_6opt3.js",
+        "server/app/[slug]/page/react-loadable-manifest.js"
+      ],
+      "name": "app/[slug]/page",
+      "page": "/[slug]/page",
+      "entrypoint": "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0_6opt3.js",
+      "matchers": [
+        {
+          "regexp": "^/(?P<nxtPslug>[^/]+?)(?:/)?$",
+          "originalSource": "/[slug]"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/_not-found/page": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/next-font-manifest.js",
+        "server/server-reference-manifest.js",
+        "server/edge/chunks/ssr/node_modules_0ckff.s._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_10msz3l._.js",
+        "server/edge/chunks/ssr/node_modules_0d8g-oq._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0i1wx97._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_12114qv._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_08a_v48._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0ai3pym._.js",
+        "server/app/_not-found/page_client-reference-manifest.js",
+        "server/edge/chunks/ssr/_next-internal_server_app__not-found_page_actions_0sp0l4e.js",
+        "server/edge/chunks/ssr/node_modules_0pspog7._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0msubik._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_build_templates_edge-ssr-app_0zdr8z8.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_059js~_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_0g5cdu_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_compiled_07ej-v4._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0a5tena._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0m.r279._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0jx2d1v._.js",
+        "server/edge/chunks/ssr/node_modules_0gbahfn._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_02.j-69._.js",
+        "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_02khcp1.js",
+        "server/app/_not-found/page/react-loadable-manifest.js"
+      ],
+      "name": "app/_not-found/page",
+      "page": "/_not-found/page",
+      "entrypoint": "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_02khcp1.js",
+      "matchers": [
+        {
+          "regexp": "^/_not-found(?:/)?$",
+          "originalSource": "/_not-found"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/api/order-status/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/server-reference-manifest.js",
+        "server/app/api/order-status/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_api_order-status_route_actions_0h0g_ek.js",
+        "server/edge/chunks/[root-of-the-server]__0bk2tp~._.js",
+        "server/edge/chunks/node_modules_next_dist_0m6dnat._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0f015uu.js"
+      ],
+      "name": "app/api/order-status/route",
+      "page": "/api/order-status/route",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0f015uu.js",
+      "matchers": [
+        {
+          "regexp": "^/api/order-status(?:/)?$",
+          "originalSource": "/api/order-status"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/api/paytr-link/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/server-reference-manifest.js",
+        "server/app/api/paytr-link/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_api_paytr-link_route_actions_0mbjukw.js",
+        "server/edge/chunks/[root-of-the-server]__0j3s~ri._.js",
+        "server/edge/chunks/node_modules_next_dist_0m6dnat._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0a._jo1.js"
+      ],
+      "name": "app/api/paytr-link/route",
+      "page": "/api/paytr-link/route",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0a._jo1.js",
+      "matchers": [
+        {
+          "regexp": "^/api/paytr-link(?:/)?$",
+          "originalSource": "/api/paytr-link"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/api/reviews/[productId]/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/server-reference-manifest.js",
+        "server/app/api/reviews/[productId]/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_api_reviews_[productId]_route_actions_12a313u.js",
+        "server/edge/chunks/node_modules_next_dist_01jb8.a._.js",
+        "server/edge/chunks/node_modules_next_dist_0m6dnat._.js",
+        "server/edge/chunks/[root-of-the-server]__0amknht._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_08m7zy..js"
+      ],
+      "name": "app/api/reviews/[productId]/route",
+      "page": "/api/reviews/[productId]/route",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_08m7zy..js",
+      "matchers": [
+        {
+          "regexp": "^/api/reviews/(?P<nxtPproductId>[^/]+?)(?:/)?$",
+          "originalSource": "/api/reviews/[productId]"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/api/reviews/debug/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/server-reference-manifest.js",
+        "server/app/api/reviews/debug/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_api_reviews_debug_route_actions_0yemdk9.js",
+        "server/edge/chunks/node_modules_next_dist_01jb8.a._.js",
+        "server/edge/chunks/node_modules_next_dist_0m6dnat._.js",
+        "server/edge/chunks/[root-of-the-server]__0n3paen._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0ftzegj.js"
+      ],
+      "name": "app/api/reviews/debug/route",
+      "page": "/api/reviews/debug/route",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0ftzegj.js",
+      "matchers": [
+        {
+          "regexp": "^/api/reviews/debug(?:/)?$",
+          "originalSource": "/api/reviews/debug"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/api/reviews/submit/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/server-reference-manifest.js",
+        "server/app/api/reviews/submit/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_api_reviews_submit_route_actions_0872m62.js",
+        "server/edge/chunks/node_modules_next_dist_01jb8.a._.js",
+        "server/edge/chunks/node_modules_next_dist_0m6dnat._.js",
+        "server/edge/chunks/[root-of-the-server]__07f33hq._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0v~ovlj.js"
+      ],
+      "name": "app/api/reviews/submit/route",
+      "page": "/api/reviews/submit/route",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0v~ovlj.js",
+      "matchers": [
+        {
+          "regexp": "^/api/reviews/submit(?:/)?$",
+          "originalSource": "/api/reviews/submit"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/api/search/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/server-reference-manifest.js",
+        "server/app/api/search/route_client-reference-manifest.js",
+        "server/edge/chunks/_next-internal_server_app_api_search_route_actions_0y5n1sv.js",
+        "server/edge/chunks/node_modules_next_dist_01jb8.a._.js",
+        "server/edge/chunks/node_modules_next_dist_0m6dnat._.js",
+        "server/edge/chunks/[root-of-the-server]__0z_zvtt._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0mtc0g4.js"
+      ],
+      "name": "app/api/search/route",
+      "page": "/api/search/route",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0mtc0g4.js",
+      "matchers": [
+        {
+          "regexp": "^/api/search(?:/)?$",
+          "originalSource": "/api/search"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/checkout/page": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/next-font-manifest.js",
+        "server/server-reference-manifest.js",
+        "server/edge/chunks/ssr/node_modules_0ckff.s._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_10msz3l._.js",
+        "server/edge/chunks/ssr/node_modules_0d8g-oq._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0i1wx97._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_12114qv._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_08a_v48._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0ai3pym._.js",
+        "server/edge/chunks/ssr/src_07em6.s._.js",
+        "server/app/checkout/page_client-reference-manifest.js",
+        "server/edge/chunks/ssr/_next-internal_server_app_checkout_page_actions_117iab..js",
+        "server/edge/chunks/ssr/node_modules_0pspog7._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0~pt.ob._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_02.j-69._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0a5tena._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_0g5cdu_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_build_templates_edge-ssr-app_0.gnmvd.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_059js~_._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0jx2d1v._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0m.r279._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_compiled_07ej-v4._.js",
+        "server/edge/chunks/ssr/node_modules_0gbahfn._.js",
+        "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0rvyyb2.js",
+        "server/app/checkout/page/react-loadable-manifest.js"
+      ],
+      "name": "app/checkout/page",
+      "page": "/checkout/page",
+      "entrypoint": "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0rvyyb2.js",
+      "matchers": [
+        {
+          "regexp": "^/checkout(?:/)?$",
+          "originalSource": "/checkout"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/page": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/next-font-manifest.js",
+        "server/server-reference-manifest.js",
+        "server/edge/chunks/ssr/node_modules_0ckff.s._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_10msz3l._.js",
+        "server/edge/chunks/ssr/node_modules_0d8g-oq._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0i1wx97._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_12114qv._.js",
+        "server/edge/chunks/ssr/_0cn~frl._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0ai3pym._.js",
+        "server/app/page_client-reference-manifest.js",
+        "server/edge/chunks/ssr/_next-internal_server_app_page_actions_0ihycwx.js",
+        "server/edge/chunks/ssr/node_modules_0pspog7._.js",
+        "server/edge/chunks/ssr/src_04-t8xm._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__05g~pvc._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_build_templates_edge-ssr-app_0uoqfd5.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_02.j-69._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_0g5cdu_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_compiled_07ej-v4._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0m.r279._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0jx2d1v._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0a5tena._.js",
+        "server/edge/chunks/ssr/node_modules_0gbahfn._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_059js~_._.js",
+        "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_03z-r8r.js",
+        "server/app/page/react-loadable-manifest.js"
+      ],
+      "name": "app/page",
+      "page": "/page",
+      "entrypoint": "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_03z-r8r.js",
+      "matchers": [
+        {
+          "regexp": "^/(?:/)?$",
+          "originalSource": "/"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/product/[slug]/page": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/next-font-manifest.js",
+        "server/server-reference-manifest.js",
+        "server/edge/chunks/ssr/node_modules_0ckff.s._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_10msz3l._.js",
+        "server/edge/chunks/ssr/node_modules_0d8g-oq._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0i1wx97._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_12114qv._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_08a_v48._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0ai3pym._.js",
+        "server/edge/chunks/ssr/src_0~38ib4._.js",
+        "server/edge/chunks/ssr/src_components_0-hyjoj._.js",
+        "server/edge/chunks/ssr/_0a_cp4~._.js",
+        "server/app/product/[slug]/page_client-reference-manifest.js",
+        "server/edge/chunks/ssr/_next-internal_server_app_product_[slug]_page_actions_12.-1.b.js",
+        "server/edge/chunks/ssr/node_modules_0pspog7._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_0g5cdu_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_02.j-69._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_059js~_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_build_templates_edge-ssr-app_0742phn.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_compiled_07ej-v4._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0m.r279._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0jx2d1v._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0a5tena._.js",
+        "server/edge/chunks/ssr/node_modules_0gbahfn._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0gq3avv._.js",
+        "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0gkkax0.js",
+        "server/app/product/[slug]/page/react-loadable-manifest.js"
+      ],
+      "name": "app/product/[slug]/page",
+      "page": "/product/[slug]/page",
+      "entrypoint": "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0gkkax0.js",
+      "matchers": [
+        {
+          "regexp": "^/product/(?P<nxtPslug>[^/]+?)(?:/)?$",
+          "originalSource": "/product/[slug]"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/shop/page": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/next-font-manifest.js",
+        "server/server-reference-manifest.js",
+        "server/edge/chunks/ssr/node_modules_0ckff.s._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_10msz3l._.js",
+        "server/edge/chunks/ssr/node_modules_0d8g-oq._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0i1wx97._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_12114qv._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_08a_v48._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0ai3pym._.js",
+        "server/edge/chunks/ssr/src_components_12x.wsu._.js",
+        "server/edge/chunks/ssr/_0a_cp4~._.js",
+        "server/app/shop/page_client-reference-manifest.js",
+        "server/edge/chunks/ssr/_next-internal_server_app_shop_page_actions_0ct95x1.js",
+        "server/edge/chunks/ssr/node_modules_0pspog7._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_0g5cdu_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_compiled_07ej-v4._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_build_templates_edge-ssr-app_0_9lxpr.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0cb-vd~._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0m.r279._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0jx2d1v._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_059js~_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0a5tena._.js",
+        "server/edge/chunks/ssr/node_modules_0gbahfn._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_02.j-69._.js",
+        "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0og.fca.js",
+        "server/app/shop/page/react-loadable-manifest.js"
+      ],
+      "name": "app/shop/page",
+      "page": "/shop/page",
+      "entrypoint": "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0og.fca.js",
+      "matchers": [
+        {
+          "regexp": "^/shop(?:/)?$",
+          "originalSource": "/shop"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    },
+    "/thank-you/page": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "required-server-files.js",
+        "server/next-font-manifest.js",
+        "server/server-reference-manifest.js",
+        "server/edge/chunks/ssr/node_modules_0ckff.s._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_10msz3l._.js",
+        "server/edge/chunks/ssr/node_modules_0d8g-oq._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0i1wx97._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_12114qv._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_08a_v48._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0ai3pym._.js",
+        "server/edge/chunks/ssr/_0mvz4ju._.js",
+        "server/app/thank-you/page_client-reference-manifest.js",
+        "server/edge/chunks/ssr/_next-internal_server_app_thank-you_page_actions_0trw8i2.js",
+        "server/edge/chunks/ssr/node_modules_0pspog7._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__09z1rhk._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_02.j-69._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0a5tena._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_0g5cdu_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_compiled_07ej-v4._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_059js~_._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_0m.r279._.js",
+        "server/edge/chunks/ssr/[root-of-the-server]__0jx2d1v._.js",
+        "server/edge/chunks/ssr/node_modules_0gbahfn._.js",
+        "server/edge/chunks/ssr/node_modules_next_dist_esm_build_templates_edge-ssr-app_096bavy.js",
+        "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_02mr~q6.js",
+        "server/app/thank-you/page/react-loadable-manifest.js"
+      ],
+      "name": "app/thank-you/page",
+      "page": "/thank-you/page",
+      "entrypoint": "server/edge/chunks/ssr/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_02mr~q6.js",
+      "matchers": [
+        {
+          "regexp": "^/thank-you(?:/)?$",
+          "originalSource": "/thank-you"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "OXphwf9V634bk-b2G3Sz8",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "2xAj6bE1UkKDIju+WCWZa05Xl81NiiIeJ/LElRqJM94=",
+        "__NEXT_PREVIEW_MODE_ID": "1e89497dc912d85564559bec7e3c60b4",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "50bf3dcc46a5a97d3e68cdebc3bac71487357f193b915dd061e20634f576a5a3",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "7b1da849cec07579a459d286c245054bcebff7e8ce98a575bdd69cc3d26624c0"
+      }
+    }
+  }
+}
